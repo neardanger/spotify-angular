@@ -1,10 +1,19 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent }  from './app.component';
+import{SearchComponent} from  './components/search/search.component'
+import{AboutComponent} from './components/about/about.component'
+import {NavbarComponent} from './components/navbar/navbar.component';
+import{appRouterProviders} from './app.routes'
+import{ROUTER_DIRECTIVES} from '@angular/router'
+
+
+
 
 @NgModule({
   imports: [ BrowserModule ],
-  declarations: [ AppComponent ],
-  bootstrap: [ AppComponent ]
+  declarations: [ AppComponent,SearchComponent,AboutComponent,NavbarComponent ],
+  bootstrap: [ AppComponent,SearchComponent,AboutComponent,NavbarComponent ],
+  providers:[appRouterProviders]
 })
 export class AppModule { }
