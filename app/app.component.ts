@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import {NavbarComponent} from './components/navbar/navbar.component';
-import{ROUTER_DIRECTIVES} from '@angular/router'
+import{ROUTER_DIRECTIVES} from '@angular/router';
+import {SearchComponent} from './components/search/search.component';
+import {AboutComponent} from './components/about/about.component';
 
 @Component({
     moduleId:module.id,
