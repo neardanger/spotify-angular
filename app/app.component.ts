@@ -6,6 +6,6 @@ import{ROUTER_DIRECTIVES} from '@angular/router'
     moduleId:module.id,
     selector: 'my-app',
     templateUrl: 'app.component.html',
-    directives:[NavbarComponent]
+    directives:[ROUTER_DIRECTIVES,NavbarComponent]
 })
 export class AppComponent { }
