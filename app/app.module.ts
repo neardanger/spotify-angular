@@ -7,13 +7,15 @@ import{AboutComponent} from './components/about/about.component'
 import {NavbarComponent} from './components/navbar/navbar.component';
 import{appRouterProviders} from './app.routes'
 import{ROUTER_DIRECTIVES} from '@angular/router'
+import {SpotifyService} from './services/spotify.service'
+import {ArtistComponent} from './components/artist/artist.component'
 
 
 
 
 @NgModule({
   imports: [ BrowserModule,FormsModule ],
-  declarations: [ AppComponent,SearchComponent,AboutComponent,NavbarComponent ],
+  declarations: [ AppComponent,SearchComponent,AboutComponent,NavbarComponent,ArtistComponent],
   bootstrap: [AppComponent],
   providers:[appRouterProviders]
 })
