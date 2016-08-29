@@ -8,6 +8,7 @@ import {NavbarComponent} from './components/navbar/navbar.component';
 import{appRouterProviders} from './app.routes'
 import{ROUTER_DIRECTIVES} from '@angular/router'
 import {SpotifyService} from './services/spotify.service'
+import {AuthService} from './services/auth.service'
 import {ArtistComponent} from './components/artist/artist.component'
 import {AlbumComponent} from './components/album/album.component'
 
@@ -17,8 +18,7 @@ import {AlbumComponent} from './components/album/album.component'
 @NgModule({
   imports: [ BrowserModule,FormsModule ],
   declarations: [ AppComponent,SearchComponent,AboutComponent,NavbarComponent,ArtistComponent,
-AlbumComponent
-  ],
+AlbumComponent],
   bootstrap: [AppComponent],
   providers:[appRouterProviders]
 })
